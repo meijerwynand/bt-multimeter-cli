@@ -120,7 +120,7 @@ Services and Characteristics:
 
 **Live decode with CSV output to terminal**
 ```sh
-python cli/main.py --device 9C:0C:35:03:C2:B7 --config config/zt5b_minimal.json
+python cli/main.py --device 9C:0C:35:03:C2:B7 --config config/zt5b.json
 ```
 _Output (CSV):_
 ```csv
@@ -178,7 +178,7 @@ python cli/main.py --device XX:XX:XX:XX:XX:XX --config config/zt5b.json
 ## Configuration
 
 All protocol and output settings are managed via JSON files in `config/`.  
-See the included `zt5b.json` as a working reference.  
+See the included `zt5b.json` as a working reference.  Also check the wiki page for more details about this config file.
 Key fields:
 - BLE connection info (`char_uuid`, `xorkey`)
 - Icon/segment regions and tables
