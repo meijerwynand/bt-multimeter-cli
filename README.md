@@ -1,5 +1,9 @@
 # Multimeter BLE CLI
 
+This is a work in progress which aims to help with troubleshooting how these devices communicate over Bluetooth.
+
+This has only been tested on a ZOYI ZT-5B
+
 A modular, config-driven Python command-line tool for connecting to, decoding, and exporting data from Bluetooth Low Energy (BLE) multimeters (e.g., ZOYI ZT-5B).
 
 ***
@@ -16,6 +20,7 @@ A modular, config-driven Python command-line tool for connecting to, decoding, a
 - [Extending Protocol Support](#extending-protocol-support)
 - [Debugging](#debugging)
 - [Collaboration & Contribution](#collaboration--contribution)
+- [Acknowledgements](#acknowledgements)
 - [License](#license)
 
 ***
@@ -205,6 +210,17 @@ Enable debug fields in your config under `debug` to print device info, packet br
 - Please discuss substantial changes or new model support before submitting PRs.
 
 ***
+
+## Acknowledgements
+
+To those who did the really hard work! :)
+
+- [ludwich66/Bluetooth-DMM](https://github.com/ludwich66/Bluetooth-DMM)
+- [webspiderteam/Bluetooth-DMM-For-Windows](https://github.com/webspiderteam/Bluetooth-DMM-For-Windows)
+- [Shiro-Nek0/Bluetooth-DMM.py](https://github.com/Shiro-Nek0/Bluetooth-DMM.py)
+
+***
+
 
 ## License
 
