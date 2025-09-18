@@ -1,0 +1,128 @@
+{
+  "model": "ZT-5B",
+  "name": "ZOYI ZT-5B",
+  "manufacturer": "ZOYI",
+  "chipset": "BEKEN",
+  "debug_icons": false,
+  "debug_segments": true,
+  "decoder": "ZT5BDecoder",
+  "xorkey": "41217355a2c1327166aa3bd0e2a833142021aabb",
+  "char_uuid": "0000fff4-0000-1000-8000-00805f9b34fb",
+
+  "debug": {
+    "device_info": true,
+    "icons": false,
+    "segments": false,
+    "packet": false
+  },
+
+  "output": {
+    "destination": "stdout",                    
+    "format": "csv",                           
+    "fields": ["timestamp", "mode", "value", "unit"],  
+    "newline_flush": true,                      
+    "output_file": "today.txt",                        
+    "websocket_url": null                       
+  },
+
+"regions": {
+  "icon": [24, 28, 60, 87],
+  "segment": [28, 60]
+},
+
+  "icon_table": [
+    "icon_battery", "icon_hold", "icon_lightning", "icon_buz", "icon_unknown", "icon_unknown1", "icon_unknown2", "icon_bt",
+    "icon_F", "icon_V", "icon_DC", "icon_AC", "icon_n", "icon_diode", "icon_mF", "icon_unknown6", "icon_ohm",
+    "icon_K", "icon_unknown3", "icon_M", "icon_unknown4", "icon_Hz", "icon_degF", "icon_degC", "icon_unknown5",
+    "icon_q7", "icon_uA", "icon_mA", "icon_q8", "icon_q9", "icon_q10", "icon_q11"
+  ],
+
+  "descriptions": {
+    "icon_battery": "Battery",
+    "icon_hold": "Hold",
+    "icon_lightning": "Lightning",
+    "icon_buz": "Buzzer",
+    "icon_bt": "Bluetooth",
+    "icon_F": "Farad",
+    "icon_V": "Volt",
+    "icon_DC": "DC",
+    "icon_AC": "AC",
+    "icon_n": "Nano",
+    "icon_diode": "Diode",
+    "icon_mF": "MilliFarad",
+    "icon_ohm": "Ohm",
+    "icon_K": "Kilo",
+    "icon_M": "Mega",
+    "icon_Hz": "Hertz",
+    "icon_degF": "Fahrenheit",
+    "icon_degC": "Celsius",
+    "icon_uA": "MicroAmp",
+    "icon_mA": "MilliAmp"
+  },
+
+  "units": {
+    "icon_battery": "",
+    "icon_hold": "",
+    "icon_lightning": "",
+    "icon_buz": "",
+    "icon_bt": "",
+    "icon_F": "F",
+    "icon_V": "V",
+    "icon_DC": "DC",
+    "icon_AC": "AC",
+    "icon_n": "n",
+    "icon_diode": "",
+    "icon_mF": "mF",
+    "icon_ohm": "Ω",
+    "icon_K": "k",
+    "icon_M": "M",
+    "icon_Hz": "Hz",
+    "icon_degF": "°F",
+    "icon_degC": "°C",
+    "icon_uA": "μA",
+    "icon_mA": "mA"
+  },
+
+  "unicode": {
+    "icon_battery": "🔋",
+    "icon_hold": "⏸",
+    "icon_lightning": "⚡",
+    "icon_buz": "🔔",
+    "icon_bt": "🅱️",
+    "icon_F": "F",
+    "icon_V": "V",
+    "icon_DC": "⎓",
+    "icon_AC": "⏦",
+    "icon_n": "n",
+    "icon_diode": "𜰎",
+    "icon_mF": "mF",
+    "icon_ohm": "Ω",
+    "icon_K": "k",
+    "icon_M": "M",
+    "icon_Hz": "Hz",
+    "icon_degF": "℉",
+    "icon_degC": "℃",
+    "icon_uA": "μA",
+    "icon_mA": "mA"
+  },
+
+  "mode_label_map": {
+    "Auto": ["icon_bt"],
+    "Temperature": ["icon_bt", "icon_degC", "icon_degF"],
+    "Voltage": ["icon_bt", "icon_V", "icon_DC", "icon_AC", "icon_lightning"],
+    "Resistance": ["icon_bt", "icon_ohm", "icon_K", "icon_M"],
+    "Capacitance": ["icon_bt", "icon_F","icon_n"],
+    "Diode-Continuity": [ "icon_bt", "icon_buz", "icon_ohm","icon_V" ],
+    "Diode": [ "icon_bt", "icon_diode", "icon_V" ],
+    "Frequency": [ "icon_bt", "icon_Hz" ]
+  },
+
+  "digit_table": {
+    "1111101": 0, "0000101": 1, "1011011": 2, "0011111": 3,
+    "0100111": 4, "0111110": 5, "1111110": 6, "0010101": 7,
+    "1111111": 8, "0111111": 9, "1110111": "A", "1001100": "u",
+    "1101010": "t", "1001110": "o", "1101000": "L", "1111010": "E",
+    "1110010": "F", "0000000": " ", "0000010": "-"
+  }
+
+}
